@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practies</title>
+    <link rel="stylesheet" href="./ji.css">
+  </head>
+  <body>
+    <form action="">
+      <h2>Будь ласка, заповніть данні</h2>
+      <div>
+        <label for="email">Ведіть будь ласка вашу електронну пошту</label>
+        <input type="email" placeholder="info@com.ua" id="email" autofocus/>
+      </div>
+      <div>
+        <label for="text">Ведіть ваше ім'я</label>
+        <input type="text" placeholder="Вася" id="text" autocomplete="on">
+      </div>
+      <div>
+        <label for="tel">Ведіть свій телефон</label>
+        <input type="tel" placeholder="+380 (99)-999-9999" id="tel">
+      </div>
+      <h2>Оберіть курс який бажаєте вивчати 😄😀</h2>
+      <ul class="goiteens-titlle">
+        <li>
+            <input type="checkbox" id="html">
+            <label for="html">html</label>
+        </li>
+        <li>
+            <input type="checkbox" id="css">
+            <label for="css">css</label>
+        </li>
+        <li>
+            <input type="checkbox" id="java">
+            <label for="java">java</label>
+        </li>
+      </ul>
+      <div>
+        <h2>Вкажіть ваш рівень досвіду</h2>
+        <ul>
+            <li>
+                <input type="radio" name="experience">
+                <label for="junior">junior</label>
+            </li>
+            <li>
+                <input type="radio" name="experience">
+                <label for="middle">middle</label>
+            </li>
+            <li>
+                <input type="radio" name="experience">
+                <label for="Senior">Senior</label>
+            </li>
+        </ul>
+      </div>
+      <div>
+        <input type="datetime-local" id="data" min="2023-09-02T12:00" max="2023-12-31T12:00">
+        <label for="вфеф">Оберіть дату з якої бажаєте навчатись</label>
+      </div>
+      <div>
+        <br>
+        <label for="file">Завантажити копію навчання у pdf</label>
+        <input type="file" id="file">
+      </div>
+      <div>
+        <label for="">Залишіть будь ласка коментар про наше обмуговування</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Привіт, мене звати..."></textarea>
+        <style>
+            textarea {
+                resize: none;
+            }
+            
+            ul {
+                list-style: none;
+            }
+        </style>
+      </div>
+      
+      <div>
+        
+        <label for="">
+            <input type="checkbox">
+            <span>Погоджуюсь на умови договору</span>
+        </label>
+      </div>
+      <button type="submit">Відправити</button>
+    </form>
+  </body>
+</html>
